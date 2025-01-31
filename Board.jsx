@@ -18,8 +18,12 @@ const Board = ({xIsNextPlayer, squares, onSelection}) {
     const winner = CalculateWinner(squares);
     let status;
     if (winner) {
-        
+        status = `Winner: ${winner}`;
+    } else {
+        status = `Next Player: ${xIsNextPlayer ? "X" : "O"}`;
     }
+
+    return ()
 }
 
 export default Board;
