@@ -1,7 +1,7 @@
 import CalculateWinner from './Calculate_Winner';
 import Square from './Square';
 
-const Board = ({xIsNextPlayer, squares, onSelection}) => {
+const Board = (xIsNextPlayer, squares, onSelection) => {
 
     const handleClick = (i) => {
         if (CalculateWinner(squares) || squares[i]) {
